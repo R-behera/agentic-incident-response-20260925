@@ -1,0 +1,52 @@
+{
+  "name": "Agentic Incident Response Orchestrator",
+  "problem": "Production teams need agentic automation without allowing an LLM-style planner to execute unsafe remediation.",
+  "domain": "llm-agents",
+  "architecture": "agent",
+  "hugging_face_tasks": [
+    "text-classification",
+    "text-generation",
+    "summarization",
+    "question-answering"
+  ],
+  "recommended_stack": [
+    "FastAPI for incident and approval APIs",
+    "LangGraph for durable multi-agent orchestration",
+    "PostgreSQL for checkpoints and audit events",
+    "Redis for queues, locks, and idempotency",
+    "OpenTelemetry plus Prometheus and Grafana",
+    "Docker Compose for reproducible service integration"
+  ],
+  "real_world_data_sources": [
+    {
+      "name": "GitHub Events API",
+      "url": "https://api.github.com/events?per_page=10",
+      "purpose": "Real deployment and repository activity events"
+    },
+    {
+      "name": "Hacker News API",
+      "url": "https://hacker-news.firebaseio.com/v0/topstories.json",
+      "purpose": "Public event-stream input for routing and summarization"
+    }
+  ],
+  "job_description_skills": [
+    "Multi-agent planning and tool orchestration",
+    "Human-in-the-loop approval and durable execution",
+    "Idempotent integrations and failure recovery",
+    "Telemetry-driven agent evaluation",
+    "Least-privilege production automation"
+  ],
+  "impact_targets": [
+    "Route >= 90% of reviewed incidents to the correct first tool",
+    "Block 100% of state-changing actions without approval",
+    "Resume interrupted plans without duplicate tool execution",
+    "Reduce simulated time-to-triage by >= 40% versus manual routing"
+  ],
+  "baseline_evaluation": {
+    "test_examples": 4,
+    "accuracy": 1,
+    "synthetic_evaluation": true
+  },
+  "estimated_delivery": "8-12 weeks for one engineer",
+  "generated_baseline_is_production_ready": false
+}

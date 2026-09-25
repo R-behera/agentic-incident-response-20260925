@@ -1,0 +1,222 @@
+{
+  "format": "daily-project-prototype-v1",
+  "project": "agentic-incident-response",
+  "title": "Agentic Incident Response Orchestrator",
+  "domain": "llm-agents",
+  "mode": "agent",
+  "labels": [
+    "inspect-logs",
+    "query-metrics",
+    "open-ticket",
+    "request-approval"
+  ],
+  "prototypes": {
+    "inspect-logs": {
+      "find": 3,
+      "the": 6,
+      "error": 3,
+      "messages": 3,
+      "around": 3,
+      "deployment": 3,
+      "timestamp": 3,
+      "search": 3,
+      "structured": 3,
+      "logs": 3,
+      "for": 8,
+      "correlated": 3,
+      "exceptions": 3,
+      "in": 2,
+      "an": 4,
+      "operations": 2,
+      "review": 2,
+      "evaluation": 2,
+      "case": 2,
+      "inspect": 3,
+      "stack": 3,
+      "traces": 6,
+      "repeated": 6,
+      "timeout": 3,
+      "failures": 3,
+      "group": 3,
+      "errors": 3,
+      "and": 3,
+      "preserve": 3,
+      "representative": 3
+    },
+    "query-metrics": {
+      "in": 1,
+      "an": 2,
+      "operations": 1,
+      "review": 1,
+      "show": 2,
+      "latency": 2,
+      "and": 4,
+      "error": 2,
+      "rate": 2,
+      "for": 3,
+      "the": 2,
+      "checkout": 2,
+      "service": 4,
+      "query": 2,
+      "level": 2,
+      "telemetry": 2,
+      "compare": 2,
+      "it": 2,
+      "with": 2,
+      "baseline": 2,
+      "evaluation": 1,
+      "case": 1
+    },
+    "open-ticket": {
+      "create": 2,
+      "a": 2,
+      "tracked": 2,
+      "incident": 4,
+      "for": 3,
+      "the": 2,
+      "payment": 2,
+      "outage": 2,
+      "open": 2,
+      "an": 3,
+      "record": 2,
+      "with": 2,
+      "evidence": 2,
+      "and": 2,
+      "ownership": 2,
+      "evaluation": 1,
+      "case": 1
+    },
+    "request-approval": {
+      "restart": 2,
+      "the": 4,
+      "production": 2,
+      "database": 2,
+      "destructive": 2,
+      "or": 2,
+      "state": 2,
+      "changing": 2,
+      "actions": 2,
+      "require": 4,
+      "explicit": 2,
+      "approval": 2,
+      "in": 2,
+      "an": 5,
+      "operations": 2,
+      "review": 2,
+      "scale": 2,
+      "service": 2,
+      "to": 2,
+      "twenty": 2,
+      "replicas": 2,
+      "capacity": 2,
+      "changes": 2,
+      "approved": 2,
+      "remediation": 2,
+      "plan": 2,
+      "for": 1,
+      "evaluation": 1,
+      "case": 1
+    }
+  },
+  "idf": {
+    "search": 2.252763,
+    "structured": 2.252763,
+    "logs": 2.252763,
+    "for": 2.252763,
+    "correlated": 2.252763,
+    "exceptions": 2.252763,
+    "query": 2.252763,
+    "service": 2.252763,
+    "level": 2.252763,
+    "telemetry": 2.252763,
+    "and": 1.559616,
+    "compare": 2.252763,
+    "it": 2.252763,
+    "with": 1.847298,
+    "baseline": 2.252763,
+    "open": 2.252763,
+    "an": 1.847298,
+    "incident": 2.252763,
+    "record": 2.252763,
+    "evidence": 2.252763,
+    "ownership": 2.252763,
+    "destructive": 2.252763,
+    "or": 2.252763,
+    "state": 2.252763,
+    "changing": 2.252763,
+    "actions": 2.252763,
+    "require": 1.847298,
+    "explicit": 2.252763,
+    "approval": 2.252763,
+    "group": 2.252763,
+    "repeated": 2.252763,
+    "errors": 2.252763,
+    "preserve": 2.252763,
+    "representative": 2.252763,
+    "traces": 2.252763,
+    "capacity": 2.252763,
+    "changes": 2.252763,
+    "approved": 2.252763,
+    "remediation": 2.252763,
+    "plan": 2.252763
+  },
+  "documents": [
+    {
+      "id": "agent-01",
+      "label": "inspect-logs",
+      "text": "Search structured logs for correlated exceptions.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "llm-agents"
+      }
+    },
+    {
+      "id": "agent-02",
+      "label": "query-metrics",
+      "text": "Query service-level telemetry and compare it with baseline.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "llm-agents"
+      }
+    },
+    {
+      "id": "agent-03",
+      "label": "open-ticket",
+      "text": "Open an incident record with evidence and ownership.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "llm-agents"
+      }
+    },
+    {
+      "id": "agent-04",
+      "label": "request-approval",
+      "text": "Destructive or state-changing actions require explicit approval.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "llm-agents"
+      }
+    },
+    {
+      "id": "agent-05",
+      "label": "inspect-logs",
+      "text": "Group repeated errors and preserve representative traces.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "llm-agents"
+      }
+    },
+    {
+      "id": "agent-06",
+      "label": "request-approval",
+      "text": "Capacity changes require an approved remediation plan.",
+      "metadata": {
+        "synthetic": true,
+        "domain": "llm-agents"
+      }
+    }
+  ],
+  "graph_edges": [],
+  "confidence_threshold": 0.18,
+  "trained_on_synthetic_data": true
+}
